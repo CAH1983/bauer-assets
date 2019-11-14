@@ -63,9 +63,11 @@ html {
     margin: 0 auto;
   }
 
-  #bauer-logo + h1 {
+  #main-ctnr h1 {
     font-family: 'Roboto Bold', sans-serif;
     text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
   }
 
   header {
@@ -172,16 +174,76 @@ html {
   }
 
 
+/* ===============  Responsive Design =================
+           Tablet size Portrait and Landscape
+======================================================= */
 
-/* // Medium devices (tablets, 579px and up)
-@media (min-width: 579px) {
+@media only screen
+  and (min-device-width: 690px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    /* header */
+    header {
+      display: flex;
+    }
+
+    #bauer-logo {
+      min-width: 30vw ;
+    }
+
+    #main-ctnr > header > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: flex-start;
+
+    }
+
+    #main-ctnr h1,
+    #main-ctnr p {
+      margin: 0;
+      text-align: left;
+    }
+
+    /* section 1 */
+
+    #section-1 {
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
 
+    }
 
-... }
+    div.section-1-card {
+      font-size: small;
+      width: 200px;
+      flex-grow: 1;
+      max-width: 212px;
+      border-radius: 20px 0 20px 0;
+      margin: 1em;
+      overflow: auto;
+      -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+}
+
+
+/* ===============  Responsive Design =================
+           Laptop to large desktop (1024px and up)
+======================================================= */
+/**/
+@media (min-width: 1024px) {
 
   body {
     background-repeat: no-repeat;
