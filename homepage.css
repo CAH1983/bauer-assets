@@ -1,0 +1,197 @@
+/* ================== Global ================== */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+ /* @media (max-width: 576px) {}*/
+
+  body {
+    background-image: url('./images/Bauer-Knowledge-System-Design-background.jpg');
+    font-family:'Open Sans', sans-serif;
+    color: white
+  }
+
+  /* wrapping container for the whole page */
+  #main-ctnr  {
+    padding: 1em;
+    margin: 0 auto;
+  }
+
+  /* styling all <li> */
+  ul {
+  	font-family: $main_font;
+  	font-size: 13px;
+  	line-height: 1.5em;
+  	margin: 5px 0 15px;
+  	padding: 0;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+  }
+
+  /* selects all <li> except 1st and last of */
+  li+li {
+    margin-top: 5px;
+  }
+
+  /* adding the "+" sign icon to all <li> */
+  div.section-1-card ul li::before,
+  #section-2 > div > ul li::before {
+    content: "+ ";
+    font-weight: bold;
+  }
+
+  /* ============== Header ================= */
+  /* Bauer assets logo */
+  #bauer-logo {
+    height: 15em;
+    background-image: url(./images/logo-bauer-assets-.png);
+    width: 15em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+  }
+
+  #bauer-logo + h1 {
+    font-family: 'Roboto Bold', sans-serif;
+    text-transform: uppercase;
+  }
+
+  header {
+    color: #1b1464;
+    text-align: center;
+  }
+
+  #main-ctnr > header > p {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2em;
+  }
+
+  #section-1, #section-2 {
+    margin-bottom: 3em;
+  }
+
+  /* =================== Section 1 ===================== */
+
+  /* styling for all cards in section 1 */
+  .section-1-card,
+  #section-2  {
+    padding: 0.5em 1em;
+  }
+
+  div.section-1-card h3 {
+    text-transform: capitalize;
+  }
+  /* all inputs inside the Section 1 */
+  #section-1 input {
+    padding: 0 0 0 5px;
+    font-size: 1em;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    height: 45px;
+    width: 90%;
+    opacity: 0.6;
+    border-bottom: 1.5px solid white;
+    margin-bottom: 1em;
+  }
+
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* on focus state for the inputs */
+  #section-1 input:focus {
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    border-bottom: 2px solid white;
+  }
+
+  #section-1 input:focus::placeholder {
+    color: lightgrey;
+    opacity: 1
+    transition: color .2s ease-out;
+    border: none;
+  }
+
+
+  /* reports tile */
+  #section-1 > div:nth-child(1) {
+      background-color: #24aae1;
+  }
+  /* Media packs tile */
+  #section-1 > div:nth-child(2) {
+      background-color: #f7941c;
+  }
+  /* Insight tile */
+  #section-1 > div:nth-child(3) {
+      background-color: #2bb673;
+  }
+  /* Testimonials tile */
+  #section-1 > div:nth-child(4) {
+      background-color: #ee3b33;
+  }
+  /* Radio Centre tile */
+  #section-1 > div:nth-child(5) {
+      background-color: #24aae1;
+  }
+
+
+  /* =================== Section 2 ===================== */
+  #section-2 input {
+
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      width: 90%;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 1em;
+  }
+
+
+  /* =================== Section 3 ===================== */
+  div.section-3-card {
+    background-color: #1b1464;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 12px;
+
+  }
+
+
+
+/* // Medium devices (tablets, 579px and up)
+@media (min-width: 579px) {
+
+
+
+... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+}
+
+
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
