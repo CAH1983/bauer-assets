@@ -212,22 +212,20 @@ html {
       text-align: left;
     }
 
-    /* section 1 */
+    /* section 1 creating separate aligned cards*/
 
     #section-1 {
       display: flex;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-
     }
 
     div.section-1-card {
       font-size: small;
       width: 200px;
       flex-grow: 1;
-      max-width: 212px;
+      max-width: 260px;
       border-radius: 20px 0 20px 0;
       margin: 1em;
       overflow: auto;
@@ -236,8 +234,38 @@ html {
       box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
     }
 
+    /* section 3 */
+
+    #section-3 {
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+    }
+
+    div.section-3-card {
+      font-size: small;
+      width: 200px;
+      flex-grow: 1;
+      max-width: 215px;
+      border-radius: 20px 0 20px 0;
+      margin: 1em;
+      -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    }
+
+
+
 }
 
+
+@media (min-width: 958px) and (max-width: 1024px) {
+  div.section-1-card {
+    flex-grow: 0;
+  }
+}
 
 /* ===============  Responsive Design =================
            Laptop to large desktop (1024px and up)
