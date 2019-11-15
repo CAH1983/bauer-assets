@@ -16,7 +16,8 @@ html {
   body {
     background-image: url('./images/Bauer-Knowledge-System-Design-background.jpg');
     font-family:'Open Sans', sans-serif;
-    color: white
+    color: white;
+    font-size: 12px;
   }
 
   /* wrapping container for the whole page */
@@ -75,7 +76,7 @@ html {
     text-align: center;
   }
 
-  #main-ctnr > header > p {
+  #main-ctnr > header > div:nth-child(2) > p {
     background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 2em;
   }
@@ -186,7 +187,6 @@ html {
     body {
       background-repeat: no-repeat;
       background-size: cover;
-
     }
 
     /* header */
@@ -206,8 +206,11 @@ html {
 
     }
 
-    #main-ctnr h1,
-    #main-ctnr p {
+    #main-ctnr h1 {
+      text-align: left;
+    }
+
+    #main-ctnr > header > div:nth-child(2) > p {
       margin: 0;
       text-align: left;
     }

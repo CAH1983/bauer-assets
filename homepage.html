@@ -34,83 +34,84 @@
 
       <!-- Reports content -->
 
-      <div class="section-1-card">
+      <div id="reports-card" class="section-1-card">
         <h3>reports</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
-        <input type="text" placeholder="Search keyword...">
 
+        <input type="text" placeholder="Search keyword...">
         <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
+          <li> <a id="reports-link-1">Lorem ipsum dolor</a> </li>
+          <li> <a id="reports-link-2">Lorem ipsum dolor</a> </li>
+          <li> <a id="reports-link-3">Lorem ipsum dolor</a> </li>
+          <li> <a id="reports-link-4">Lorem ipsum dolor</a> </li>
+          <li> <a id="reports-link-5">Lorem ipsum dolor</a> </li>
+          <li> <a id="reports-link-6">Lorem ipsum dolor</a> </li>
         </ul>
       </div>
 
       <!-- Media Packs content -->
-      <div class="section-1-card">
+      <div id="MP-card" class="section-1-card">
         <h3>Media Packs</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
         <input type="text" placeholder="Search keyword...">
 
         <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
+          <li> <a id="MP-link-1">Lorem ipsum dolor</a> </li>
+          <li> <a id="MP-link-2">Lorem ipsum dolor</a> </li>
+          <li> <a id="MP-link-3">Lorem ipsum dolor</a> </li>
+          <li> <a id="MP-link-4">Lorem ipsum dolor</a> </li>
+          <li> <a id="MP-link-5">Lorem ipsum dolor</a> </li>
+          <li> <a id="MP-link-6">Lorem ipsum dolor</a> </li>
         </ul>
       </div>
 
 
       <!-- Insight content -->
-      <div class="section-1-card">
+      <div id="insights-card" class="section-1-card">
         <h3>Insight</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
         <input type="text" placeholder="Search keyword...">
 
         <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
+          <li> <a id="insights-link-1">Lorem ipsum dolor</a> </li>
+          <li> <a id="insights-link-2">Lorem ipsum dolor</a> </li>
+          <li> <a id="insights-link-3">Lorem ipsum dolor</a> </li>
+          <li> <a id="insights-link-4">Lorem ipsum dolor</a> </li>
+          <li> <a id="insights-link-5">Lorem ipsum dolor</a> </li>
+          <li> <a id="insights-link-6">Lorem ipsum dolor</a> </li>
+        </ul>
         </ul>
       </div>
 
       <!-- Testimonials content -->
-      <div class="section-1-card">
+      <div id="testi-card" class="section-1-card">
         <h3>Testimonials</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
         <input type="text" placeholder="Search keyword...">
 
         <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
+          <li> <a id="testi-link-1">Lorem ipsum dolor</a> </li>
+          <li> <a id="testi-link-2">Lorem ipsum dolor</a> </li>
+          <li> <a id="testi-link-3">Lorem ipsum dolor</a> </li>
+          <li> <a id="testi-link-4">Lorem ipsum dolor</a> </li>
+          <li> <a id="testi-link-5">Lorem ipsum dolor</a> </li>
+          <li> <a id="testi-link-6">Lorem ipsum dolor</a> </li>
         </ul>
       </div>
 
-      <!-- Radio centre -->
-      <div class="section-1-card">
-        <h3>Radio centre</h3>
+      <!-- Training content -->
+      <div id="training-card" class="section-1-card">
+        <h3>Training and development</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
         <input type="text" placeholder="Search keyword...">
 
         <ul>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
+          <li> <a id="training-link-1">Lorem ipsum dolor</a> </li>
+          <li> <a id="training-link-2">Lorem ipsum dolor</a> </li>
+          <li> <a id="training-link-3">Lorem ipsum dolor</a> </li>
+          <li> <a id="training-link-4">Lorem ipsum dolor</a> </li>
+          <li> <a id="training-link-5">Lorem ipsum dolor</a> </li>
+          <li> <a id="training-link-6">Lorem ipsum dolor</a> </li>
         </ul>
       </div>
 
@@ -118,9 +119,17 @@
 
     <!-- Section 2: Search keyword section -->
     <section id="section-2">
-      <div>
-        <input type="text" placeholder="Search keyword...">
-        <ul>
+      <div id="glob-search-box">
+        <input id="SearchForm" type="text" placeholder="Search keyword..."/>
+
+        
+        <select id="select-area">
+          <option value="[Select all]"></option>
+          <option value="BMA"></option>
+          <option value="Local Radio"></option>
+        </select>
+
+
           <li>Lorem ispsum dolor</li>
           <li>Lorem ispsum dolor</li>
           <li>Lorem ispsum dolor</li>
@@ -137,61 +146,46 @@
       </div>
     </section>
 
-    <!-- Section 3: cards by file extension type -->
+    <!-- Section 3: categories -->
     <section id="section-3">
-      <div class="section-3-card">
-        <h3> doc1.ppt </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+
+      <div id="category-link-1"  class="section-3-card">
+        <h3> <a> Cash for kids </a></h3>
+
       </div>
 
-      <div class="section-3-card">
-        <h3> doc2.pdf </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+      <div id="category-link-2" class="section-3-card">
+        <h3> <a>Video</a></h3>
       </div>
 
-      <div class="section-3-card">
-        <h3> doc3.ppt </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+      <div id="category-link-3" class="section-3-card">
+        <h3> <a>Bauer create</a></h3>
       </div>
 
-      <div class="section-3-card">
-        <h3> doc4.pdf </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+      <div id="category-link-4" class="section-3-card">
+        <h3> <a>Product and Brand info</a></h3>
       </div>
 
-      <div class="section-3-card">
-        <h3> doc5.xls </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+      <div id="category-link-5" class="section-3-card">
+        <h3> <a>Door openers</a></h3>
       </div>
 
-      <div class="section-3-card">
-        <h3> doc6.doc </h3>
-        <ul>
-          <li>Download</li>
-          <li>Copy link</li>
-          <li>Email link</li>
-        </ul>
+      <div id="category-link-6" class="section-3-card">
+        <h3> <a>Competitive Media</a></h3>
       </div>
+
+      <div id="category-link-7" class="section-3-card">
+        <h3> <a>Bauer Academy</a></h3>
+      </div>
+
+      <div id="category-link-8" class="section-3-card">
+        <h3> <a>Competitive Media</a></h3>
+      </div>
+
+      <div id="category-link-9" class="section-3-card">
+        <h3> <a>Digital</a></h3>
+      </div>
+
     </section>
   </div>
 </body>
