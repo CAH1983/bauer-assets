@@ -22,7 +22,7 @@ html {
 
   /* wrapping container for the whole page */
   #main-ctnr  {
-    padding: 1em;
+    padding: 2vw;
     margin: 0 auto;
   }
 
@@ -71,7 +71,8 @@ html {
   #main-ctnr h1 {
     font-family: 'Roboto Bold', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 5vw;
+    font-weight: 800;
     margin: 0;
   }
 
@@ -179,13 +180,45 @@ html {
   }
 
 
+  /* ===============  Responsive Design =================
+      min: 468px - 689px
+  ======================================================= */
+
+@media (min-width: 465px) AND (max-width: 689px) {
+  #main-ctnr  {
+    padding: 2.5em;
+  }
+
+  #main-ctnr > header > div:nth-child(2) > p {
+    padding: 1em 2em;
+
+  }
+
+  .section-1-card {
+    padding: 2em;
+  }
+
+  #section-3 {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-evenly; */
+  }
+
+  div.section-3-card {
+    text-align: center;
+    margin: 1em;
+    flex-grow: 1;
+  }
+
+}
+
 /* ===============  Responsive Design =================
-           Tablet size Portrait and Landscape
+           Tablet size Portrait and Landscape 690px - 1024px
 ======================================================= */
 
 @media only screen
   and (min-device-width: 690px)
-  and (max-device-width: 1024px)
+  and (max-device-width: 1199px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
     body {
@@ -240,6 +273,12 @@ html {
       box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
     }
 
+  /* section2 */
+
+    #section-2 {
+      width: 80%;
+    }
+
     /* section 3 */
 
     #section-3 {
@@ -252,25 +291,40 @@ html {
 
     div.section-3-card {
       font-size: small;
-      width: 200px;
+      width: auto;
       flex-grow: 1;
-      max-width: 215px;
       border-radius: 20px 0 20px 0;
       margin: 1em;
       -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
       -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
       box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      text-align: center;
     }
-
-
 
 }
 
-
+/* ======================== adjustments ===============================*/
 @media (min-width: 958px) and (max-width: 1024px) {
+
   div.section-1-card {
     flex-grow: 0;
   }
+
+}
+
+@media (min-width: 973px) {
+
+    #bauer-logo {
+      margin: 0;
+    }
+    div.section-3-card {
+      flex-grow: 0;
+    }
+}
+
+@media (min-width: 691) {
+  #main-ctnr h1 {
+    font-size: 30px;
 }
 
 /* ===============  Responsive Design =================
@@ -282,7 +336,12 @@ html {
   body {
     background-repeat: no-repeat;
     background-size: cover;
-
+  }
+#bauer-logo {
+  margin: 0;
+}
+  #main-ctnr > header > div:nth-child(2) {
+    width: 50vw;
   }
 
 }
