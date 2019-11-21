@@ -66,6 +66,8 @@
   #SearchForm {
     border-bottom-color: rgba(255, 255, 255, 0.5);
     width: 100%;
+    align-self: center;
+
   }
   #SearchForm::placeholder {
     color: rgba(255, 255, 255, 0.5);

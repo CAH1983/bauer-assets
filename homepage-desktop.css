@@ -19,6 +19,12 @@ Laptop to large desktop (1024px and up)
   #main-ctnr > header > div:nth-child(2) {
     width: 50vw;
   }
+
+
+  #SearchForm {
+    align-self: center;
+
+  }
   #SearchForm:focus {
     opacity: 1;
     transition: opacity .2s ease-out;
@@ -118,7 +124,7 @@ Laptop to large desktop (1024px and up)
     font-size: small;
     max-width: 250px;
     width: auto;
-    flex: 1 200px;
+    /* flex: 1 200px; */
     border-radius: 15px 0 15px 0;
     margin: 1em;
     -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
