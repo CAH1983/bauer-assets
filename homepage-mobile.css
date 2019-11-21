@@ -162,16 +162,17 @@ html {
       border: 0;
       outline: 0;
       border-bottom: 2px solid #1b1464;
-      width: 90%;
+      width: 65%;
       height: 50px;
       font-size: 20px;
       color: #1b1464;
       margin-bottom: 1em;
+      align-self: center;
   }
 
-#SearchForm::placeholder {
-  color: #1b1464;
-}
+  #SearchForm::placeholder {
+    color: #1b1464;
+  }
 
 
   select {

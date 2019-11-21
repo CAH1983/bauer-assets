@@ -65,6 +65,7 @@
 
   #SearchForm {
     border-bottom-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
   }
   #SearchForm::placeholder {
     color: rgba(255, 255, 255, 0.5);
@@ -111,11 +112,6 @@
   div.section-1-card {
     flex-grow: 0;
   }
-
-  div.section-3-card {
-    padding-top: 0;
-    padding-bottom: 0
-}
 
 @media (min-width: 973px) {
 

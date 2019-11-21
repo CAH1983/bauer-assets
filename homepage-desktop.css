@@ -58,12 +58,18 @@ Laptop to large desktop (1024px and up)
     font-size: 16px;
   }
 
+  #section-1, #section-2, #section-3 {
+    margin-top: 100px;
+  }
+
   /* Section 1: align all card contents in 1 line */
   #section-1 {
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: space-between;
+
   }
 
   div.section-1-card {
@@ -84,6 +90,7 @@ Laptop to large desktop (1024px and up)
 
   #SearchForm {
     border-bottom-color: rgba(255, 255, 255, 0.5);
+    max-width: 620px;
   }
   #SearchForm::placeholder {
     color: rgba(255, 255, 255, 0.5);
@@ -109,8 +116,9 @@ Laptop to large desktop (1024px and up)
 
   div.section-3-card {
     font-size: small;
+    max-width: 250px;
     width: auto;
-    flex-grow: 1;
+    flex: 1 200px;
     border-radius: 15px 0 15px 0;
     margin: 1em;
     -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
