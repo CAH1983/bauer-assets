@@ -1,0 +1,128 @@
+
+/* ===============  Responsive Design =================
+Laptop to large desktop (1024px and up)
+======================================================= */
+/**/
+@media (min-width: 1024px) {
+
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bauer-logo {
+    margin: 0;
+  }
+
+  #main-ctnr {
+    padding: 5vw 10vw;
+  }
+  #main-ctnr > header > div:nth-child(2) {
+    width: 50vw;
+  }
+  #SearchForm:focus {
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    border-bottom: 2px solid white;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main-ctnr > header > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+  }
+
+  #bauer-logo {
+    width: 200px;
+    height: 200px;
+  }
+  #main-ctnr h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  #main-ctnr > header > div:nth-child(2) > p {
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  /* Section 1: align all card contents in 1 line */
+  #section-1 {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  div.section-1-card {
+    font-size: small;
+    width: 200px;
+    max-width: 250px;
+    flex: 1;
+    border-radius: 20px 0 20px 0;
+    margin: 1em;
+    overflow: auto;
+    -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+  }
+
+
+  /* Section 2: wrap dropdown menus */
+
+  #SearchForm {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+  #SearchForm::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #glob-search-box > ul {
+    display: flex;
+  }
+
+  #glob-search-box > ul > select {
+    margin-right: 15px;
+  }
+
+  /* section 3 */
+
+  #section-3 {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.section-3-card {
+    font-size: small;
+    width: auto;
+    flex-grow: 1;
+    border-radius: 15px 0 15px 0;
+    margin: 1em;
+    -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    text-align: center;
+  }
+
+
+}
+
+
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

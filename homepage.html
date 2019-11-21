@@ -9,15 +9,13 @@
 
 
   <!-- css links -->
-  <link rel="stylesheet" href="homepage.css">
-    <!-- Multiple select plugin Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css"> -->
+  <link rel="stylesheet" href="homepage-mobile.css">
+  <link rel="stylesheet" href="homepage-tablet.css">
+  <link rel="stylesheet" href="homepage-desktop.css">
 
   <!-- JavaScript links -->
   <script src="homepage.js" charset="utf-8"></script>
 
-  <!-- Latest Multiple select plugin compiled and minified JavaScript -->
-  <!-- <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script> -->
 
   <title>Bauer Assets</title>
 </head>
@@ -40,7 +38,6 @@
     </header>
 
 
-
     <!-- ============================ First section ============================  -->
     <section id="section-1">
 
@@ -50,7 +47,7 @@
         <h3>reports</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi aliquam sunt adipisci facere magnam</p>
 
-        <input type="text" placeholder="Search keyword...">
+        <!-- <input type="text" placeholder="Search keyword..."> -->
         <ul>
           <li> <a id="reports-link-1">Lorem ipsum dolor</a> </li>
           <li> <a id="reports-link-2">Lorem ipsum dolor</a> </li>
@@ -133,6 +130,7 @@
     <section id="section-2">
       <div id="glob-search-box">
         <input id="SearchForm" type="text" placeholder="Search keyword..."/>
+        <br>
 
         <ul>
         <select id="select-area">
@@ -141,7 +139,7 @@
           <option value="Local Radio">Local Radio</option>
         </select>
         <br>
-        <select id="select-subj">
+        <select id="selec">
           <option value="[Select all]">Select all</option>
           <option value="BMA">BMA</option>
           <option value="Local Radio">Local Radio</option>
@@ -158,12 +156,12 @@
           <option value="BMA">BMA</option>
           <option value="Local Radio">Local Radio</option>
         </select>
+        </ul>
         <br>
 
-
-
-
-        </ul>
+    <div class="btn-cont">
+      <button id="SearchButton" type="submit" value="Search"> <span>Go ! </span> </button>
+    </div>
       </div>
     </section>
 

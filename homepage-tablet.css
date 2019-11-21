@@ -1,0 +1,133 @@
+
+/* ===============  Responsive Design =================
+           Tablet size Portrait and Landscape 690px - 1024px
+======================================================= */
+
+@media only screen
+  and (min-device-width: 690px)
+  and (max-device-width: 1199px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* header */
+    header {
+      display: flex;
+    }
+
+    #bauer-logo {
+      min-width: 30vw ;
+    }
+
+    #main-ctnr > header > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: flex-start;
+    }
+
+    #main-ctnr h1 {
+      font-size: 3vw;
+      text-align: left;
+    }
+
+    #main-ctnr > header > div:nth-child(2) > p {
+      margin: 0;
+      text-align: left;
+    }
+
+    /* section 1 creating separate aligned cards*/
+
+    #section-1 {
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    div.section-1-card {
+      font-size: small;
+      width: 200px;
+      flex-grow: 1;
+      max-width: 260px;
+      border-radius: 20px 0 20px 0;
+      margin: 1em;
+      overflow: auto;
+      -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+    }
+
+  /* section2 */
+
+  #SearchForm {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+  #SearchForm::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #SearchForm:focus {
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    border-bottom: 2px solid white;
+  }
+
+    #section-2 {
+      width: 80%;
+    }
+
+  /* section 3 */
+
+    #section-3 {
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    div.section-3-card {
+      font-size: small;
+      width: auto;
+      flex-grow: 1;
+      border-radius: 15px 0 15px 0;
+      margin: 1em;
+      -webkit-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      -moz-box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      box-shadow: 7px 7px 10px -5px rgba(0,0,0,0.33);
+      text-align: center;
+      padding-top: 0;
+      padding-bottom: 0
+    }
+
+}
+
+/* ======================== adjustments ===============================*/
+@media (min-width: 958px) and (max-width: 1024px) {
+
+  div.section-1-card {
+    flex-grow: 0;
+  }
+
+  div.section-3-card {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+@media (min-width: 973px) {
+
+    #bauer-logo {
+      margin: 0;
+    }
+    div.section-3-card {
+      flex-grow: 0;
+    }
+}
+
+@media (min-width: 691) {
+  #main-ctnr h1 {
+    font-size: 30px;
+}
