@@ -1,4 +1,4 @@
-/* ================== Global ================== */
+/* ================== Global - Mobile first ================== */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -9,6 +9,8 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
+
+
 
 /* Small devices max-width 576px */
  /* @media (max-width: 576px) {}*/
@@ -98,11 +100,63 @@ html {
     padding: 0.5em 1em;
   }
 
+
+  /* :::::::::::: HOVER EFFECT ON CARDS ::::::::::: */
+  .section-1-card {
+    transition: all 0.3s;
+    position: relative;
+  }
+ 
+  .section-1-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+
+  .section-1-card:hover::before {
+    opacity: 1;	
+    transform: scale(1, 1);	
+  }
+  .section-1-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .section-1-card:hover::after {
+    opacity: 0;	
+    transform: scale(0.1, 1);
+  }
+  
+  .section-1-card > ul > li:hover {
+    font-weight: bold;
+  }
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
   div.section-1-card h3 {
     text-transform: capitalize;
   }
+
   /* all inputs inside the Section 1 */
   #section-1 input {
+    z-index: 2;
     padding: 0 0 0 5px;
     font-size: 1em;
     border: 0;
@@ -240,6 +294,79 @@ html {
     margin: 1em 0;
     font-size: 12px;
   }
+
+
+    /* :::::::::::: HOVER EFFECT ON BOTTOM LINKS ::::::::::: */
+    .section-3-card {
+      transition: all 0.3s;
+      position: relative;
+    }
+    /* .btn-one span {
+      transition: all 0.3s;
+    } */
+    .section-3-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: all 0.3s;
+      border-top-width: 4px;
+      border-bottom-width: 4px;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-top-color: rgba(255,255,255,0.5);
+      border-bottom-color: rgba(255,255,255,0.5);
+      transform: scale(0.1, 1);
+    }
+    /* .btn-one:hover span {
+      letter-spacing: 2px;
+    } */
+    .section-3-card:hover::before {
+      opacity: 1;	
+      transform: scale(1, 1);	
+    }
+    .section-3-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.3s;
+      background-color: rgba(255,255,255,0.1);
+    }
+    .section-3-card:hover::after {
+      opacity: 0;	
+      transform: scale(0.1, 1);
+    }
+  /* div.section-3-card:hover {
+    animation: bounce 1s;
+  }
+
+
+  /* animation 
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  } */
+
 
 
   /* ===============  Responsive Design =================
